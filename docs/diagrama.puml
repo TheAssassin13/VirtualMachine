@@ -1,0 +1,28 @@
+@startuml
+
+class Ram {
+    - array: int[];
+    + write(address: int, data: int): void;
+    + read(address: int): int;
+}
+
+class Registers {
+    - pc: int;
+    + a: int;
+    + d: int;
+    + getPc(): int;
+    + setPc(pc: int): void;
+}
+
+class App {
+    + instructions: string[];
+    + currentInstruction: string;
+    + decode(instruction: string): void;
+    - setARegister(int): void;
+    - setDRegister(int): void;
+    - setPcRegister(int): void;
+    - writeRam(address: string, data: int): void;
+    - alu(a: int, b: int, operation: int): int[];
+}
+
+@enduml
