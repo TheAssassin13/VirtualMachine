@@ -1,7 +1,7 @@
 package app.virtualmachine;
 
 public class Registers {
-    private int pc;
+    public int pc;
     public int a;
     public int d;
     public Registers() {

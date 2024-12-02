@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="647f95a1-4090-4dc3-a217-726f24fe55f7" name="Changes" comment="feat: add class diagram">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Ram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Registers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app/virtualmachine/app-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Ram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Ram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Registers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Registers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app/virtualmachine/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +33,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vicetr3s"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/TheAssassin13/VirtualMachine.git",
+    "accountId": "aec1a9da-06b9-4448-b976-e9338cdb2cdd"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2pflVPmVeUMDNI5vGJhWR3oJXmB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,18 +56,42 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "Application.Unnamed.executor": "Run",
     "DefaultPlantUmlFileTemplate": "UML Class",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.virtualmachine.Application" />
+      <module name="VirtualMachine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733165036169</updated>
       <workItem from="1733165037182" duration="3703000" />
+      <workItem from="1733170429664" duration="2210000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1733165112443</created>
@@ -75,6 +122,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
