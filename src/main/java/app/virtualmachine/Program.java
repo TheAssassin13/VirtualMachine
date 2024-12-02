@@ -38,15 +38,17 @@ public class Program {
 
     }
 
-    private void setARegister(int data) {
+    public void setARegister(int data) {
         this.registers.a = data;
     }
 
-    private void setDRegister(int data) {
+    public void setDRegister(int data) {
         this.registers.d = data;
     }
 
-    private void setPcRegister(int data) {
+    public void setPcRegister(int data) {
+        if (data >= this.instructions.length) return;
+
         this.registers.pc = data;
     }
 

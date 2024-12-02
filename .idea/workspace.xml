@@ -4,6 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="647f95a1-4090-4dc3-a217-726f24fe55f7" name="Changes" comment="feat: added program interface&#10;&#10;you can press a button to move on to the next instruction">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app/virtualmachine/app-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/virtualmachine/app-view.fxml" afterDir="false" />
+    </list>
     <list default="true" id="647f95a1-4090-4dc3-a217-726f24fe55f7" name="Changes" comment="feat: add Constants class and ALU logic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,20 +29,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;vicetr3s&quot;
-  }
-}</component>
+        &quot;lastFilter&quot;: {
+        &quot;state&quot;: &quot;OPEN&quot;,
+        &quot;assignee&quot;: &quot;vicetr3s&quot;
+        }
+        }</component>
   <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/TheAssassin13/VirtualMachine.git&quot;,
-    &quot;accountId&quot;: &quot;aec1a9da-06b9-4448-b976-e9338cdb2cdd&quot;
-  }
-}</component>
+        &quot;selectedUrlAndAccountId&quot;: {
+        &quot;url&quot;: &quot;https://github.com/TheAssassin13/VirtualMachine.git&quot;,
+        &quot;accountId&quot;: &quot;aec1a9da-06b9-4448-b976-e9338cdb2cdd&quot;
+        }
+        }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
+        &quot;associatedIndex&quot;: 0
+        }</component>
   <component name="ProjectId" id="2pflVPmVeUMDNI5vGJhWR3oJXmB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,26 +50,26 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+        &quot;keyToString&quot;: {
+        &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+        &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+        &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+        &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+        &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+        &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+        &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+        &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+        &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+        &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+        &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+        &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+        &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+        &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+        &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+        &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+        &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+        }
+        }</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.virtualmachine.Application" />
@@ -142,5 +149,7 @@
     <MESSAGE value="feat: add classes for the logic" />
     <MESSAGE value="feat: add Constants class and ALU logic" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: add Constants class and ALU logic" />
+    <MESSAGE value="feat: added program interface&#10;&#10;you can press a button to move on to the next instruction" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added program interface&#10;&#10;you can press a button to move on to the next instruction" />
   </component>
 </project>
