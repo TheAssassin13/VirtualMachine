@@ -14,4 +14,8 @@ public class Ram {
     public int read(int address) {
         return this.data[address];
     }
+
+    public int getSize() {
+        return this.data.length;
+    }
 }

@@ -13,11 +13,13 @@ public class Program {
         this.instructions = instructions;
     }
 
+    // Resets the RAM and registers to their initial states.
     public void reset() {
         this.ram = new Ram(Constants.RAM_SIZE);
         this.registers = new Registers();
     }
 
+    // Executes each instruction in the program by decoding it and incrementing the program counter.
     public void runProgram() {
         for (String instruction : instructions) {
             this.decodeInstruction(instruction);
@@ -26,6 +28,7 @@ public class Program {
         }
     }
 
+    // Advances to the next instruction, decodes it, and updates the program counter unless at the end of the instruction list.
     public void nextInstruction() {
         if (this.registers.pc + 1 >= this.instructions.length) return;
 

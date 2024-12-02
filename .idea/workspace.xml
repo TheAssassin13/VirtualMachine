@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="647f95a1-4090-4dc3-a217-726f24fe55f7" name="Changes" comment="feat: added program interface&#10;&#10;you can press a button to move on to the next instruction">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="647f95a1-4090-4dc3-a217-726f24fe55f7" name="Changes" comment="feat: user can see and change the ram values">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/RamEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Ram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Ram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/app/virtualmachine/app-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/virtualmachine/app-view.fxml" afterDir="false" />
     </list>
-    <list default="true" id="647f95a1-4090-4dc3-a217-726f24fe55f7" name="Changes" comment="feat: add Constants class and ALU logic" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,18 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-        &quot;lastFilter&quot;: {
-        &quot;state&quot;: &quot;OPEN&quot;,
-        &quot;assignee&quot;: &quot;vicetr3s&quot;
-        }
-        }</component>
-  <component name="GithubPullRequestsUISettings">{
-        &quot;selectedUrlAndAccountId&quot;: {
-        &quot;url&quot;: &quot;https://github.com/TheAssassin13/VirtualMachine.git&quot;,
-        &quot;accountId&quot;: &quot;aec1a9da-06b9-4448-b976-e9338cdb2cdd&quot;
-        }
-        }</component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vicetr3s"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/TheAssassin13/VirtualMachine.git",
+    "accountId": "aec1a9da-06b9-4448-b976-e9338cdb2cdd"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
         &quot;associatedIndex&quot;: 0
         }</component>
@@ -97,6 +97,7 @@
       <updated>1733165036169</updated>
       <workItem from="1733165037182" duration="7741000" />
       <workItem from="1733170429664" duration="2210000" />
+      <workItem from="1733179825856" duration="1195000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1733165112443</created>
@@ -126,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733174248949</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: user can change the PC, register A, and register D values">
+      <option name="closed" value="true" />
+      <created>1733175544249</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733175544249</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,8 +157,9 @@
     <MESSAGE value="feat: add class diagram" />
     <MESSAGE value="feat: add classes for the logic" />
     <MESSAGE value="feat: add Constants class and ALU logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Constants class and ALU logic" />
     <MESSAGE value="feat: added program interface&#10;&#10;you can press a button to move on to the next instruction" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added program interface&#10;&#10;you can press a button to move on to the next instruction" />
+    <MESSAGE value="feat: user can change the PC, register A, and register D values" />
+    <MESSAGE value="feat: user can see and change the ram values" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: user can see and change the ram values" />
   </component>
 </project>
