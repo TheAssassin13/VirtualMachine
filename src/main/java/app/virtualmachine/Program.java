@@ -6,18 +6,16 @@ public class Program {
     public Registers registers;
 
     public Program() {
-        this.ram = new Ram(Constants.RAM_SIZE);
-        this.registers = new Registers();
+        reset();
     }
 
     public void setInstructions(String[] instructions) {
         this.instructions = instructions;
-        this.ram = new Ram(Constants.RAM_SIZE);
-        this.registers = new Registers();
     }
 
     public void reset() {
-
+        this.ram = new Ram(Constants.RAM_SIZE);
+        this.registers = new Registers();
     }
 
     public void runProgram() {
@@ -53,10 +51,7 @@ public class Program {
     }
 
     private void writeRam(String address, int data) {
-        int decimalAddress = 0;
-        for (int i = address.length() - 1; i > 0; i--) {
-            decimalAddress += Math.pow(2, address.length() - 1 - i) * Character.digit(address.charAt(i), 10);
-        }
+        int decimalAddress = Constants.binaryToDecimal(address);
         this.ram.write(decimalAddress, data);
     }
     private int[] alu(int x, int y, String operation) {
