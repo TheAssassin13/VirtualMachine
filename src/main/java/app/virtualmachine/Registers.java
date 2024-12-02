@@ -9,13 +9,4 @@ public class Registers {
         this.a = 0;
         this.d = 0;
     }
-
-    public int getPc() {
-        int pc = this.pc;
-        this.pc++;
-        return pc;
-    }
-    public void setPc(int pc) {
-        this.pc = pc;
-    }
 }
