@@ -67,12 +67,13 @@ public class AppController {
     public void reset(ActionEvent actionEvent) {
         this.program.reset();
 
+        this.updateRamTable();
         this.handleTextFields();
     }
 
     // Updates the text fields with the current instruction, program counter, and register values.
     private void handleTextFields() {
-        String currentInstruction = this.program.instructions == null ? "" : this.program.instructions[program.registers.pc];
+        String currentInstruction = this.program.instructions == null ? "" : this.program.instructions[program.registers.pc < program.instructions.length ? program.registers.pc : program.registers.pc - 1];
 
         this.currentInstructionTextField.setText(currentInstruction);
         this.pcText.setText(String.valueOf(this.program.registers.pc));
