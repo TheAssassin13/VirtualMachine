@@ -5,6 +5,7 @@ public class Program {
     public Ram ram;
     public Registers registers;
     public int outM;
+    public boolean running;
 
     public Program() {
         reset();
@@ -20,15 +21,7 @@ public class Program {
         this.ram = new Ram(Constants.RAM_SIZE);
         this.registers = new Registers();
         this.outM = 0;
-    }
-
-    // Executes each instruction in the program by decoding it and incrementing the program counter.
-    public void runProgram() {
-        while (this.registers.pc < instructions.length) {
-            this.decodeInstruction(this.instructions[this.registers.pc]);
-
-            this.registers.pc++;
-        }
+        this.running = false;
     }
 
     // Advances to the next instruction, decodes it, and updates the program counter unless at the end of the instruction list.

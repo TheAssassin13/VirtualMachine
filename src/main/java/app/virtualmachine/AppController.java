@@ -1,5 +1,7 @@
 package app.virtualmachine;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -10,6 +12,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.KeyEvent;
+import javafx.util.Duration;
 
 public class AppController {
     @FXML
@@ -55,14 +58,32 @@ public class AppController {
     }
 
     // Executes all instructions in the program, updates the RAM table, and refreshes the text fields.
-    public void runAll(ActionEvent actionEvent) {
+    public void runAllWithDelay(ActionEvent actionEvent) {
         if (this.instructionsTextArea.getText().isEmpty()) return;
 
-        this.program.runProgram();
+        Timeline timeline = new Timeline();
+        this.program.running = true;
 
-        this.updateRamTable();
-        this.handleTextFields();
+        // Create a new KeyFrame that is executed at each iteration of the loop.
+        KeyFrame keyFrame = new KeyFrame(Duration.millis(Constants.EXECUTION_DELAY), event -> {
+            if (this.program.running && this.program.registers.pc < this.program.instructions.length) {
+                // Execute the loop logic
+                this.program.nextInstruction();
+                this.updateRamTable();
+                this.handleTextFields();
+            } else {
+                // Stop Timeline when loop completes
+                timeline.stop();
+                this.program.running = false;
+            }
+
+        });
+
+        timeline.getKeyFrames().add(keyFrame);
+        timeline.setCycleCount(Timeline.INDEFINITE); // Repeat indefinitely until stopped manually
+        timeline.play(); // Start Timeline
     }
+
 
     public void reset(ActionEvent actionEvent) {
         this.program.reset();
@@ -148,5 +169,9 @@ public class AppController {
             ramEntries.add(new RamEntry(i, this.program.ram.read(i)));
         }
         ramTableView.setItems(ramEntries);
+    }
+
+    public void stop(ActionEvent actionEvent) {
+        this.program.running = false;
     }
 }

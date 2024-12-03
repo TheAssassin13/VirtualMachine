@@ -2,6 +2,7 @@ package app.virtualmachine;
 
 public class Constants {
     static final int RAM_SIZE = 24576;
+    static final int EXECUTION_DELAY = 100;
 
     public static int binaryToDecimal(String binary) {
         int decimal = 0;

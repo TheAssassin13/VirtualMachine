@@ -4,44 +4,42 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="385.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.12"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.virtualmachine.AppController">
+<AnchorPane prefHeight="385.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.virtualmachine.AppController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
     <Label contentDisplay="BOTTOM" layoutX="32.0" layoutY="28.0" text="Instructions (binary)">
         <graphic>
-            <TextArea fx:id="instructionsTextArea" onKeyTyped="#onInstructionsInputChange" prefHeight="200.0"
-                      prefWidth="200.0"/>
+            <TextArea fx:id="instructionsTextArea" onKeyTyped="#onInstructionsInputChange" prefHeight="200.0" prefWidth="200.0" />
         </graphic>
     </Label>
     <Label contentDisplay="BOTTOM" layoutX="251.0" layoutY="50.0" text="Current instruction">
         <graphic>
-            <TextField fx:id="currentInstructionTextField"/>
+            <TextField fx:id="currentInstructionTextField" />
         </graphic>
     </Label>
     <Label contentDisplay="BOTTOM" layoutX="424.0" layoutY="14.0" text="RAM">
         <graphic>
-            <TableView prefHeight="326.0" prefWidth="200.0" fx:id="ramTableView"/>
+            <TableView fx:id="ramTableView" prefHeight="326.0" prefWidth="200.0" />
         </graphic>
     </Label>
     <Label contentDisplay="BOTTOM" layoutX="251.0" layoutY="125.0" prefHeight="96.0" prefWidth="93.0" text="Registers">
         <graphic>
             <VBox alignment="TOP_RIGHT">
-                <Label contentDisplay="RIGHT" text="PC" >
+                <Label contentDisplay="RIGHT" text="PC">
                     <graphic>
-                        <TextField prefHeight="25.0" prefWidth="50.0" fx:id="pcText" onKeyTyped="#onPcInputChange"/>
+                        <TextField fx:id="pcText" onKeyTyped="#onPcInputChange" prefHeight="25.0" prefWidth="50.0" />
                     </graphic>
                 </Label>
-                <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" text="A" >
+                <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" text="A">
                     <graphic>
-                        <TextField prefHeight="25.0" prefWidth="50.0" fx:id="aRegisterText" onKeyTyped="#onARegisterInputChange"/>
+                        <TextField fx:id="aRegisterText" onKeyTyped="#onARegisterInputChange" prefHeight="25.0" prefWidth="50.0" />
 
                     </graphic>
                 </Label>
-                <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="35.0" text="D" >
+                <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="35.0" text="D">
                     <graphic>
-                        <TextField prefHeight="25.0" prefWidth="50.0" fx:id="dRegisterText" onKeyTyped="#onDRegisterInputChange"/>
+                        <TextField fx:id="dRegisterText" onKeyTyped="#onDRegisterInputChange" prefHeight="25.0" prefWidth="50.0" />
 
                     </graphic>
                 </Label>
@@ -51,9 +49,10 @@
     <Label contentDisplay="BOTTOM" layoutX="207.0" layoutY="249.0" prefWidth="200.0" text="Actions">
         <graphic>
             <HBox alignment="TOP_CENTER" prefHeight="37.0" prefWidth="200.0">
-                <Button mnemonicParsing="false" onAction="#nextInstruction" text="Step"/>
-                <Button layoutX="10.0" layoutY="10.0" onAction="#runAll" mnemonicParsing="false" text="Run"/>
-                <Button layoutX="47.0" layoutY="10.0" onAction="#reset" mnemonicParsing="false" text="Reset"/>
+                <Button mnemonicParsing="false" onAction="#nextInstruction" text="Step" />
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#runAllWithDelay" text="Run" />
+                <Button layoutX="47.0" layoutY="10.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+            <Button layoutX="126.0" layoutY="10.0" mnemonicParsing="false" onAction="#stop" text="Stop" />
             </HBox>
         </graphic>
     </Label>

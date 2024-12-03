@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="647f95a1-4090-4dc3-a217-726f24fe55f7" name="Changes" comment="feat: user can see and change the ram values">
+    <list default="true" id="647f95a1-4090-4dc3-a217-726f24fe55f7" name="Changes" comment="feat: user can see and change the ram values&#10;&#10;added some comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/virtualmachine/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app/virtualmachine/app-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/virtualmachine/app-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +98,7 @@
       <workItem from="1733170429664" duration="2210000" />
       <workItem from="1733179825856" duration="1195000" />
       <workItem from="1733193838423" duration="101000" />
+      <workItem from="1733179825856" duration="1344000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1733165112443</created>
@@ -133,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733175544249</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: user can see and change the ram values&#10;&#10;added some comments">
+      <option name="closed" value="true" />
+      <created>1733181160259</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733181160259</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +170,7 @@
     <MESSAGE value="feat: added program interface&#10;&#10;you can press a button to move on to the next instruction" />
     <MESSAGE value="feat: user can change the PC, register A, and register D values" />
     <MESSAGE value="feat: user can see and change the ram values" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: user can see and change the ram values" />
+    <MESSAGE value="feat: user can see and change the ram values&#10;&#10;added some comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: user can see and change the ram values&#10;&#10;added some comments" />
   </component>
 </project>
